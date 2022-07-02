@@ -53,7 +53,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.iterator;
+})();
 })();
 </script>
 ```
@@ -212,6 +214,7 @@ The returned iterator protocol-compliant object has the following properties:
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-hypergeometric@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var it;
 var r;
@@ -231,6 +234,7 @@ while ( true ) {
     console.log( r.value );
 }
 
+})();
 })();
 </script>
 </body>
@@ -326,11 +330,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [hypergeometric]: https://en.wikipedia.org/wiki/Hypergeometric_distribution
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/umd
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/umd/tree/umd
 
 <!-- <related-links> -->
 
-[@stdlib/random/base/hypergeometric]: https://github.com/stdlib-js/random-base-hypergeometric/tree/umd
+[@stdlib/random/base/hypergeometric]: https://github.com/stdlib-js/random-base-hypergeometric/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
